@@ -17,7 +17,6 @@ class ArticlesController < ApplicationController
         @article.user= current_user
         
         if @article.save
-            byebug
             redirect_to @article
         else
              render 'new'
